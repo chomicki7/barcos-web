@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  text-align: center;
+  padding: 1em 0;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+}
+
+.background {
+  background-image: url(./background.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 50%;
+}
+
+article {
+  text-align: center;
+  display: block;
+}
+
+article h3 {
+  padding: 1em 0;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+article p {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding-bottom: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container img {
+  width: 450px;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+}
+
+footer {
+  background-color: black;
+  color: antiquewhite;
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+footer h4 {
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  font-variant: small-caps;
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .hide {
+    display: none;
+  }
+  article {
+    display: flex;
+  }
+  article div {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  .hide {
+    display: none;
+  }
+  .background {
+    height: 300px;
+  }
+}
